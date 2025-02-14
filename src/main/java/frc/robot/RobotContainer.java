@@ -5,6 +5,8 @@
 package frc.robot;
 
 import com.pathplanner.lib.auto.NamedCommands;
+
+import edu.wpi.first.cameraserver.CameraServer;
 import edu.wpi.first.math.geometry.Pose2d;
 import edu.wpi.first.math.geometry.Rotation2d;
 import edu.wpi.first.math.geometry.Translation2d;
@@ -107,6 +109,7 @@ new CommandPS5Controller(OperatorConstants.OPERATOR_CONTROLLER_PORT);
    */
   public RobotContainer()
   {
+    CameraServer.startAutomaticCapture();
     // Configure the trigger bindings
     configureBindings();
     DriverStation.silenceJoystickConnectionWarning(true);
