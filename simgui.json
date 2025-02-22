@@ -1,6 +1,11 @@
 {
   "HALProvider": {
     "Other Devices": {
+      "SPARK MAX [11] ABSOLUTE ENCODER": {
+        "header": {
+          "open": true
+        }
+      },
       "SPARK MAX [2]": {
         "header": {
           "open": true
@@ -12,6 +17,11 @@
         }
       },
       "SPARK MAX [5]": {
+        "header": {
+          "open": true
+        }
+      },
+      "SPARK MAX [5] ABSOLUTE ENCODER": {
         "header": {
           "open": true
         }
@@ -60,6 +70,7 @@
       "/LiveWindow/Ungrouped/PIDController[1]": "PIDController",
       "/LiveWindow/Ungrouped/Pigeon 2 [13]": "Gyro",
       "/LiveWindow/Ungrouped/Scheduler": "Scheduler",
+      "/SmartDashboard/Alerts": "Alerts",
       "/SmartDashboard/Encoders": "Alerts",
       "/SmartDashboard/Field": "Field2d",
       "/SmartDashboard/IMU": "Alerts",
@@ -96,13 +107,19 @@
         },
         "XModules": {
           "arrowColor": [
-            0.09611687064170837,
-            0.17414122819900513,
+            0.0961168110370636,
             0.9803921580314636,
+            0.9543838500976563,
             255.0
           ],
           "arrowSize": 33,
           "arrowWeight": 3.0,
+          "color": [
+            0.0,
+            135.0,
+            255.0,
+            255.0
+          ],
           "style": "Hidden"
         },
         "bottom": 1476,
@@ -135,5 +152,8 @@
   },
   "NetworkTables Info": {
     "visible": true
+  },
+  "NetworkTables View": {
+    "visible": false
   }
 }

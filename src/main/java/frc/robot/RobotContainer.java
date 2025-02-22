@@ -4,8 +4,8 @@
 
 package frc.robot;
 
-import com.pathplanner.lib.auto.NamedCommands;
 
+import com.pathplanner.lib.auto.NamedCommands;
 import edu.wpi.first.cameraserver.CameraServer;
 import edu.wpi.first.math.geometry.Pose2d;
 import edu.wpi.first.math.geometry.Rotation2d;
@@ -50,6 +50,10 @@ new CommandPS5Controller(OperatorConstants.OPERATOR_CONTROLLER_PORT);
   public final ArmSubsystem m_arm = new ArmSubsystem();
   public final ClimberSubsystem m_climber = new ClimberSubsystem();
 
+  
+
+  
+
   // The robot's subsystems and commands are defined here...
   private final SwerveSubsystem       drivebase  = new SwerveSubsystem(new File(Filesystem.getDeployDirectory(),
                                                                                 "swerve/maxSwerve"));
@@ -58,8 +62,8 @@ new CommandPS5Controller(OperatorConstants.OPERATOR_CONTROLLER_PORT);
    * Converts driver input into a field-relative ChassisSpeeds that is controlled by angular velocity.
    */
   SwerveInputStream driveAngularVelocity = SwerveInputStream.of(drivebase.getSwerveDrive(),
-                                                                () -> driverController.getLeftY() * -1,
-                                                                () -> driverController.getLeftX() * -1)
+                                                                () -> -driverController.getLeftY() * 1,
+                                                                () -> -driverController.getLeftX() * 1)
                                                             .withControllerRotationAxis(driverController::getRightX)
                                                             .deadband(OperatorConstants.DEADBAND)
                                                             .scaleTranslation(0.8)
@@ -76,7 +80,7 @@ new CommandPS5Controller(OperatorConstants.OPERATOR_CONTROLLER_PORT);
    * Clone's the angular velocity input stream and converts it to a robotRelative input stream.
    */
   SwerveInputStream driveRobotOriented = driveAngularVelocity.copy().robotRelative(true)
-                                                             .allianceRelativeControl(false);
+                                                             .allianceRelativeControl(true);
 
   SwerveInputStream driveAngularVelocityKeyboard = SwerveInputStream.of(drivebase.getSwerveDrive(),
                                                                         () -> -driverController.getLeftY(),
@@ -113,7 +117,8 @@ new CommandPS5Controller(OperatorConstants.OPERATOR_CONTROLLER_PORT);
     // Configure the trigger bindings
     configureBindings();
     DriverStation.silenceJoystickConnectionWarning(true);
-    NamedCommands.registerCommand("test", Commands.print("I EXIST"));
+    NamedCommands.registerCommand("CoralOutCommand", getAutonomousCommand());
+    NamedCommands.registerCommand("AlgaeOutCommand", getAutonomousCommand());
   }
 
   /**
@@ -140,17 +145,17 @@ new CommandPS5Controller(OperatorConstants.OPERATOR_CONTROLLER_PORT);
      * written more compact but are left verbose so the intent is clear.
      */
    
-    m_operatorController.R1().whileTrue(new AlgaeInCommand(m_roller));
+    m_operatorController.R2().whileTrue(new AlgaeInCommand(m_roller));
     
     // Here we use a trigger as a button when it is pushed past a certain threshold
-    m_operatorController.R2().whileTrue(new AlgaeOutCommand(m_roller));
+    m_operatorController.R1().whileTrue(new AlgaeOutCommand(m_roller));
 
     /**
      * The arm will be passively held up or down after this is used,
      * make sure not to run the arm too long or it may get upset!
      */
-    m_operatorController.L1().whileTrue(new ArmUpCommand(m_arm));
-    m_operatorController.L2().whileTrue(new ArmDownCommand(m_arm));
+    m_operatorController.L2().whileTrue(new ArmUpCommand(m_arm));
+    m_operatorController.L1().whileTrue(new ArmDownCommand(m_arm));
 
     /**
      * Used to score coral, the stack command is for when there is already coral
@@ -164,14 +169,14 @@ new CommandPS5Controller(OperatorConstants.OPERATOR_CONTROLLER_PORT);
      * POV is a direction on the D-Pad or directional arrow pad of the controller,
      * the direction of this will be different depending on how your winch is wound
      */
-    m_operatorController.pov(0).whileTrue(new ClimberUpCommand(m_climber));
-    m_operatorController.pov(180).whileTrue(new ClimberDownCommand(m_climber));
+    m_operatorController.pov(90).whileTrue(new ClimberUpCommand(m_climber));
+    m_operatorController.pov(270).whileTrue(new ClimberDownCommand(m_climber));
 
     if (RobotBase.isSimulation())
     {
       drivebase.setDefaultCommand(driveFieldOrientedDirectAngleKeyboard);
     } else
-    {
+    {                                                                                                                                 
       drivebase.setDefaultCommand(driveFieldOrientedAnglularVelocity);
     }
 
@@ -215,7 +220,7 @@ new CommandPS5Controller(OperatorConstants.OPERATOR_CONTROLLER_PORT);
   public Command getAutonomousCommand()
   {
     // An example command will be run in autonomous
-    return drivebase.getAutonomousCommand("New Auto");
+    return drivebase.getAutonomousCommand("Middle Coral&Red Drive");
   }
 
   public void setMotorBrake(boolean brake)
