@@ -5,15 +5,9 @@
     "data": {
       "commands": [
         {
-          "type": "wait",
-          "data": {
-            "waitTime": 1.0
-          }
-        },
-        {
           "type": "path",
           "data": {
-            "pathName": "Middle Coral Delievery"
+            "pathName": "New Path"
           }
         },
         {
@@ -23,33 +17,21 @@
           }
         },
         {
-          "type": "wait",
+          "type": "path",
           "data": {
-            "waitTime": 1.5
+            "pathName": "Coral intake"
           }
         },
         {
           "type": "path",
           "data": {
-            "pathName": "Drive Blue Side"
+            "pathName": "Coral intake to station"
           }
         },
         {
-          "type": "wait",
+          "type": "named",
           "data": {
-            "waitTime": 1.0
-          }
-        },
-        {
-          "type": "path",
-          "data": {
-            "pathName": "Drive to Algae"
-          }
-        },
-        {
-          "type": "path",
-          "data": {
-            "pathName": "Knock down Algae"
+            "name": "CoralOutCommand"
           }
         }
       ]
