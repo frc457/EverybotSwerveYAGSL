@@ -54,7 +54,7 @@ public final class Constants
     public static final double ROLLER_MOTOR_VOLTAGE_COMP = 10;
     public static final double ROLLER_CORAL_OUT = .3;
     public static final double ROLLER_ALGAE_IN = -0.8;
-    public static final double ROLLER_ALGAE_OUT = 0.5;
+    public static final double ROLLER_ALGAE_OUT = 0.55;
     public static final double ROLLER_CORAL_STACK = 1;
   }
 
@@ -74,6 +74,7 @@ public final class Constants
     public static final double CLIMBER_MOTOR_VOLTAGE_COMP = 12;
     public static final double CLIMBER_SPEED_DOWN = -0.5;
     public static final double CLIMBER_SPEED_UP = 0.5;
+    public static final int BEAMBREAK_DIO = 0;
   }
 
 

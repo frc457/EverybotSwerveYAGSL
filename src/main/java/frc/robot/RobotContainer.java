@@ -64,23 +64,11 @@ new CommandPS5Controller(OperatorConstants.OPERATOR_CONTROLLER_PORT);
   SwerveInputStream driveAngularVelocity = SwerveInputStream.of(drivebase.getSwerveDrive(),
                                                                 () -> -driverController.getLeftY() * 1,
                                                                 () -> -driverController.getLeftX() * 1)
-                                                            .withControllerRotationAxis(driverController::getRightX)
+                                                            .withControllerRotationAxis(()->-driverController.getRightX())
                                                             .deadband(OperatorConstants.DEADBAND)
                                                             .scaleTranslation(0.8)
                                                             .allianceRelativeControl(true);
 
-  /**
-   * Clone's the angular velocity input stream and converts it to a fieldRelative input stream.
-   */
-  SwerveInputStream driveDirectAngle = driveAngularVelocity.copy().withControllerHeadingAxis(driverController::getRightX,
-                                                                                             driverController::getRightY)
-                                                           .headingWhile(true);
-
-  /**
-   * Clone's the angular velocity input stream and converts it to a robotRelative input stream.
-   */
-  SwerveInputStream driveRobotOriented = driveAngularVelocity.copy().robotRelative(true)
-                                                             .allianceRelativeControl(true);
 
   SwerveInputStream driveAngularVelocityKeyboard = SwerveInputStream.of(drivebase.getSwerveDrive(),
                                                                         () -> -driverController.getLeftY(),
@@ -117,8 +105,8 @@ new CommandPS5Controller(OperatorConstants.OPERATOR_CONTROLLER_PORT);
     // Configure the trigger bindings
     configureBindings();
     DriverStation.silenceJoystickConnectionWarning(true);
-    NamedCommands.registerCommand("CoralOutCommand", getAutonomousCommand());
-    NamedCommands.registerCommand("AlgaeOutCommand", getAutonomousCommand());
+    NamedCommands.registerCommand("CoralOutCommand", new CoralOutCommand(m_roller));
+    NamedCommands.registerCommand("AlgaeOutCommand", new AlgaeOutCommand(m_roller));
   }
 
   /**
@@ -131,15 +119,8 @@ new CommandPS5Controller(OperatorConstants.OPERATOR_CONTROLLER_PORT);
   private void configureBindings()
   {
 
-    Command driveFieldOrientedDirectAngle      = drivebase.driveFieldOriented(driveDirectAngle);
     Command driveFieldOrientedAnglularVelocity = drivebase.driveFieldOriented(driveAngularVelocity);
-    Command driveRobotOrientedAngularVelocity  = drivebase.driveFieldOriented(driveRobotOriented);
-    Command driveSetpointGen = drivebase.driveWithSetpointGeneratorFieldRelative(
-        driveDirectAngle);
     Command driveFieldOrientedDirectAngleKeyboard      = drivebase.driveFieldOriented(driveDirectAngleKeyboard);
-    Command driveFieldOrientedAnglularVelocityKeyboard = drivebase.driveFieldOriented(driveAngularVelocityKeyboard);
-    Command driveSetpointGenKeyboard = drivebase.driveWithSetpointGeneratorFieldRelative(
-        driveDirectAngleKeyboard);
     /**
      * Here we declare all of our operator commands, these commands could have been
      * written more compact but are left verbose so the intent is clear.

@@ -7,17 +7,20 @@ import com.revrobotics.spark.SparkLowLevel.MotorType;
 import com.revrobotics.spark.config.SparkMaxConfig;
 import com.revrobotics.spark.config.SparkBaseConfig.IdleMode;
 
+import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import frc.robot.Constants.ClimberConstants;
 
 public class ClimberSubsystem extends SubsystemBase {
 
     private final SparkMax climbMotor;
+    private final DigitalInput beamBreak;
 
     /**
      * This subsytem control the climber.
      */
     public ClimberSubsystem () {
+        beamBreak = new DigitalInput(ClimberConstants.BEAMBREAK_DIO);
 
     // Set up the climb motor as a brushless motor
     climbMotor = new SparkMax(ClimberConstants.CLIMBER_MOTOR_ID, MotorType.kBrushless);
@@ -49,6 +52,11 @@ public class ClimberSubsystem extends SubsystemBase {
      */
     public void runClimber(double speed){
         climbMotor.set(speed);
+    }
+
+    public boolean cageDetected()
+    {
+        return beamBreak.get(); //!beamBreak.get();
     }
 
 }
