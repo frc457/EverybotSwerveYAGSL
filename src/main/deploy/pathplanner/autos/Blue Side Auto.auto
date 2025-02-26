@@ -40,6 +40,12 @@
           "data": {
             "pathName": "Reef to Coral 1"
           }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0.5
+          }
         }
       ]
     }
