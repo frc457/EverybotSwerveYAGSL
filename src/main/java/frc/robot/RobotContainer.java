@@ -107,6 +107,8 @@ new CommandPS5Controller(OperatorConstants.OPERATOR_CONTROLLER_PORT);
     DriverStation.silenceJoystickConnectionWarning(true);
     NamedCommands.registerCommand("CoralOutCommand", new CoralOutCommand(m_roller));
     NamedCommands.registerCommand("AlgaeOutCommand", new AlgaeOutCommand(m_roller));
+    NamedCommands.registerCommand("CoralStackCommand", new CoralStackCommand(m_roller));
+    NamedCommands.registerCommand("ArmUpCommand", new ArmUpCommand(m_arm));
   }
 
   /**
@@ -201,7 +203,7 @@ new CommandPS5Controller(OperatorConstants.OPERATOR_CONTROLLER_PORT);
   public Command getAutonomousCommand()
   {
     // An example command will be run in autonomous
-    return drivebase.getAutonomousCommand("Middle Coral&Red Drive");
+    return drivebase.getAutonomousCommand("Blue Side Auto");
   }
 
   public void setMotorBrake(boolean brake)

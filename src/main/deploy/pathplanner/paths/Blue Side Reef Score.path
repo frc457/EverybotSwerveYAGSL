@@ -3,37 +3,32 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 5.17725,
-        "y": 5.117
+        "x": 7.240573770491803,
+        "y": 7.543391393442622
       },
       "prevControl": null,
       "nextControl": {
-        "x": 4.7775,
-        "y": 6.21875
+        "x": 6.533299180327869,
+        "y": 7.915010245901638
       },
       "isLocked": false,
       "linkedName": null
     },
     {
       "anchor": {
-        "x": 1.482,
-        "y": 7.29125
+        "x": 5.075964095744681,
+        "y": 5.238563829787234
       },
       "prevControl": {
-        "x": 1.1568329534719104,
-        "y": 7.4818267807093335
+        "x": 5.807214095744682,
+        "y": 5.766022846180675
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": null
+      "linkedName": "Reef Score 1"
     }
   ],
-  "rotationTargets": [
-    {
-      "waypointRelativePos": 1.0,
-      "rotationDegrees": -55.0
-    }
-  ],
+  "rotationTargets": [],
   "constraintZones": [],
   "pointTowardsZones": [],
   "eventMarkers": [],
@@ -47,13 +42,13 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": -56.513831184487
+    "rotation": 60.94539590092295
   },
   "reversed": false,
-  "folder": null,
+  "folder": "Blue Side Auto",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": 59.93141717813763
+    "rotation": 0.0
   },
   "useDefaultConstraints": true
 }
