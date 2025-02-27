@@ -5,6 +5,12 @@
     "data": {
       "commands": [
         {
+          "type": "named",
+          "data": {
+            "name": "ArmDownCommand"
+          }
+        },
+        {
           "type": "path",
           "data": {
             "pathName": "Blue Side Reef Score"
@@ -17,22 +23,16 @@
               {
                 "type": "named",
                 "data": {
-                  "name": "CoralOutCommand"
+                  "name": "ArmDownCommand"
                 }
               },
               {
                 "type": "named",
                 "data": {
-                  "name": "ArmUpCommand"
+                  "name": "CoralOutCommand"
                 }
               }
             ]
-          }
-        },
-        {
-          "type": "wait",
-          "data": {
-            "waitTime": 0.5
           }
         },
         {
@@ -44,7 +44,81 @@
         {
           "type": "wait",
           "data": {
-            "waitTime": 0.5
+            "waitTime": 0.25
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "ArmDownCommand"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Coral to Reef 2"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "ArmDownCommand"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "CoralOutCommand"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Coral to Reef 3"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "ArmDownCommand"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0.25
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Coral to Reef 4"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "ArmDownCommand"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "CoralStackCommand"
+                }
+              }
+            ]
           }
         }
       ]

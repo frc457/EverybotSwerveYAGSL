@@ -109,6 +109,7 @@ new CommandPS5Controller(OperatorConstants.OPERATOR_CONTROLLER_PORT);
     NamedCommands.registerCommand("AlgaeOutCommand", new AlgaeOutCommand(m_roller));
     NamedCommands.registerCommand("CoralStackCommand", new CoralStackCommand(m_roller));
     NamedCommands.registerCommand("ArmUpCommand", new ArmUpCommand(m_arm));
+    NamedCommands.registerCommand("ArmDownCommand", new ArmDownCommand(m_arm));
   }
 
   /**
