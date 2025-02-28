@@ -46,7 +46,7 @@ public class CoralStackCommand extends Command {
 
     Timer timer = new Timer();
 
-    timer.schedule(task, 1000);
+    timer.schedule(task, 250);
   }
 
   // Called every time the scheduler runs while the command is scheduled.
