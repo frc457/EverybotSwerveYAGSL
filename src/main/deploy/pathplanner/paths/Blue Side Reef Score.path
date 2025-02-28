@@ -16,16 +16,16 @@
     },
     {
       "anchor": {
-        "x": 5.228006133264306,
-        "y": 5.413209203734664
+        "x": 5.134712213931895,
+        "y": 5.509188254484981
       },
       "prevControl": {
-        "x": 5.719707256378701,
-        "y": 5.999408130794893
+        "x": 5.62641333704629,
+        "y": 6.09538718154521
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": null
+      "linkedName": "Reef 1 Blue"
     }
   ],
   "rotationTargets": [],
@@ -42,7 +42,7 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": 61.699244233993504
+    "rotation": 60.05805746972679
   },
   "reversed": false,
   "folder": "Blue Side Auto",

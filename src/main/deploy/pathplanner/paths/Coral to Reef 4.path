@@ -3,29 +3,29 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 1.1628073770491802,
-        "y": 6.979969262295082
+        "x": 1.343737726549203,
+        "y": 7.159740871870424
       },
       "prevControl": null,
       "nextControl": {
-        "x": 1.4843182211504118,
-        "y": 5.293894946220649
+        "x": 1.8108279976649428,
+        "y": 5.536073926353268
       },
       "isLocked": false,
-      "linkedName": null
+      "linkedName": "Coral Station Blue"
     },
     {
       "anchor": {
-        "x": 3.65625,
-        "y": 5.3496413934426235
+        "x": 3.648690270741789,
+        "y": 5.394215464887423
       },
       "prevControl": {
-        "x": 3.9685006663956575,
-        "y": 5.45774774282938
+        "x": 3.9066412316173,
+        "y": 5.406452573964069
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": null
+      "linkedName": "Reef 2 Blue"
     }
   ],
   "rotationTargets": [],
@@ -42,13 +42,13 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": 119.05460409907717
+    "rotation": 119.74488129694218
   },
   "reversed": false,
   "folder": "Blue Side Auto",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": -55.00797980144139
+    "rotation": -52.96961039432119
   },
   "useDefaultConstraints": true
 }

@@ -17,12 +17,6 @@
           }
         },
         {
-          "type": "path",
-          "data": {
-            "pathName": "Reef to Coral 1"
-          }
-        },
-        {
           "type": "parallel",
           "data": {
             "commands": [
@@ -42,9 +36,21 @@
           }
         },
         {
+          "type": "path",
+          "data": {
+            "pathName": "Reef to Coral 1"
+          }
+        },
+        {
           "type": "named",
           "data": {
             "name": "ArmDownCommand"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0.5
           }
         },
         {
@@ -73,12 +79,6 @@
           }
         },
         {
-          "type": "wait",
-          "data": {
-            "waitTime": 0.25
-          }
-        },
-        {
           "type": "path",
           "data": {
             "pathName": "Coral to Reef 3"
@@ -93,7 +93,7 @@
         {
           "type": "wait",
           "data": {
-            "waitTime": 0.25
+            "waitTime": 0.5
           }
         },
         {
@@ -119,12 +119,6 @@
                 }
               }
             ]
-          }
-        },
-        {
-          "type": "path",
-          "data": {
-            "pathName": "Reef to Coral 5"
           }
         }
       ]

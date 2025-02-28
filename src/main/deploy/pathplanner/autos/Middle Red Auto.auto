@@ -34,6 +34,49 @@
               }
             ]
           }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Middle R Reef to Coral 2"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "ArmDownCommand"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0.5
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Middle R Coral to Reef 3"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "ArmDownCommand"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "CoralOutCommand"
+                }
+              }
+            ]
+          }
         }
       ]
     }
