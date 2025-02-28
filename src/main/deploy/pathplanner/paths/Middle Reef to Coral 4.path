@@ -3,29 +3,29 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 1.4471173377183681,
-        "y": 0.7746551346605542
+        "x": 2.87565922703292,
+        "y": 3.792370305753709
       },
       "prevControl": null,
       "nextControl": {
-        "x": 1.4659610592365162,
-        "y": 0.5238745627255442
+        "x": 2.7628743922018146,
+        "y": 3.2144814185885866
       },
       "isLocked": false,
-      "linkedName": "Coral Red"
+      "linkedName": "Middle Reef 2"
     },
     {
       "anchor": {
-        "x": 3.621522013675273,
-        "y": 2.6712389639575336
+        "x": 0.7084910168322262,
+        "y": 1.3003658374084341
       },
       "prevControl": {
-        "x": 1.8617389017315367,
-        "y": 2.43653643362065
+        "x": 0.36553655022977355,
+        "y": 1.0327635839333262
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": "Reef 2 Red"
+      "linkedName": "Middle Red Coral"
     }
   ],
   "rotationTargets": [],
@@ -42,13 +42,13 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": -119.92616160518695
+    "rotation": 53.6525417911147
   },
   "reversed": false,
-  "folder": "Red Side Auto",
+  "folder": "Middle Red Auto",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": 54.023129712890665
+    "rotation": 180.0
   },
   "useDefaultConstraints": true
 }

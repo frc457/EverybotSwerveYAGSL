@@ -8,11 +8,11 @@
       },
       "prevControl": null,
       "nextControl": {
-        "x": 7.495647288911035,
-        "y": 3.947577090996504
+        "x": 7.4961256506894705,
+        "y": 3.955462877262798
       },
       "isLocked": false,
-      "linkedName": null
+      "linkedName": "Middle Start"
     },
     {
       "anchor": {
@@ -20,12 +20,12 @@
         "y": 3.7332779255319144
       },
       "prevControl": {
-        "x": 6.483750642841258,
-        "y": 3.855296239317078
+        "x": 6.48414539866653,
+        "y": 3.8673237434893
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": null
+      "linkedName": "Middle Reef 1"
     }
   ],
   "rotationTargets": [],

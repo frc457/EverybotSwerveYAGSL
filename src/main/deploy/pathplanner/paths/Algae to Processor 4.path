@@ -3,29 +3,29 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 1.4471173377183681,
-        "y": 0.7746551346605542
+        "x": 1.9414886990687126,
+        "y": 4.035309468598428
       },
       "prevControl": null,
       "nextControl": {
-        "x": 1.4659610592365162,
-        "y": 0.5238745627255442
+        "x": 1.8170690216426013,
+        "y": 2.998831893804689
       },
       "isLocked": false,
-      "linkedName": "Coral Red"
+      "linkedName": "Algae 2"
     },
     {
       "anchor": {
-        "x": 3.621522013675273,
-        "y": 2.6712389639575336
+        "x": 5.9933304884561425,
+        "y": 0.5937235686288159
       },
       "prevControl": {
-        "x": 1.8617389017315367,
-        "y": 2.43653643362065
+        "x": 6.052151072495771,
+        "y": 1.5348529132628541
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": "Reef 2 Red"
+      "linkedName": "Processor"
     }
   ],
   "rotationTargets": [],
@@ -42,13 +42,13 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": -119.92616160518695
+    "rotation": 90.0
   },
   "reversed": false,
-  "folder": "Red Side Auto",
+  "folder": "Red Algae Auto",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": 54.023129712890665
+    "rotation": 0.6295986084102146
   },
   "useDefaultConstraints": true
 }

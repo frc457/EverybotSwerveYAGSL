@@ -13,7 +13,7 @@
         {
           "type": "path",
           "data": {
-            "pathName": "Middle R Start to Reef 1"
+            "pathName": "Start to Algae 1"
           }
         },
         {
@@ -23,13 +23,13 @@
               {
                 "type": "named",
                 "data": {
-                  "name": "ArmDownCommand"
+                  "name": "ArmUpCommand"
                 }
               },
               {
                 "type": "named",
                 "data": {
-                  "name": "CoralOutCommand"
+                  "name": "AlgaeInCommand"
                 }
               }
             ]
@@ -38,7 +38,26 @@
         {
           "type": "path",
           "data": {
-            "pathName": "Middle R Reef to Coral 2"
+            "pathName": "Algae to Processor 2"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "ArmUpCommand"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "AlgaeOutCommand"
+                }
+              }
+            ]
           }
         },
         {
@@ -48,15 +67,9 @@
           }
         },
         {
-          "type": "wait",
-          "data": {
-            "waitTime": 0.5
-          }
-        },
-        {
           "type": "path",
           "data": {
-            "pathName": "Middle R Coral to Reef 3"
+            "pathName": "Processor to Algae 3"
           }
         },
         {
@@ -66,13 +79,13 @@
               {
                 "type": "named",
                 "data": {
-                  "name": "ArmDownCommand"
+                  "name": "ArmUpCommand"
                 }
               },
               {
                 "type": "named",
                 "data": {
-                  "name": "CoralOutCommand"
+                  "name": "AlgaeInCommand"
                 }
               }
             ]
@@ -81,7 +94,26 @@
         {
           "type": "path",
           "data": {
-            "pathName": "Middle Reef to Coral 4"
+            "pathName": "Algae to Processor 4"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "ArmUpCommand"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "AlgaeOutCommand"
+                }
+              }
+            ]
           }
         },
         {
@@ -91,34 +123,9 @@
           }
         },
         {
-          "type": "wait",
-          "data": {
-            "waitTime": 0.5
-          }
-        },
-        {
           "type": "path",
           "data": {
-            "pathName": "Middle R Coral to Reef 5"
-          }
-        },
-        {
-          "type": "parallel",
-          "data": {
-            "commands": [
-              {
-                "type": "named",
-                "data": {
-                  "name": "ArmDownCommand"
-                }
-              },
-              {
-                "type": "named",
-                "data": {
-                  "name": "CoralStackCommand"
-                }
-              }
-            ]
+            "pathName": "Processor to Algae 5"
           }
         }
       ]

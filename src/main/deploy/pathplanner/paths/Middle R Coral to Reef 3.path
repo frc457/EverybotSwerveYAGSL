@@ -3,29 +3,29 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 0.7351396276595744,
-        "y": 1.31781914893617
+        "x": 0.7084910168322262,
+        "y": 1.3003658374084341
       },
       "prevControl": null,
       "nextControl": {
-        "x": 1.7464485455629148,
-        "y": 1.9104914179752648
+        "x": 1.8646971750560604,
+        "y": 2.118085157310111
       },
       "isLocked": false,
-      "linkedName": null
+      "linkedName": "Middle Red Coral"
     },
     {
       "anchor": {
-        "x": 2.8938829787234046,
-        "y": 3.663264627659574
+        "x": 2.87565922703292,
+        "y": 3.792370305753709
       },
       "prevControl": {
-        "x": 2.661134530632299,
-        "y": 3.536332793204738
+        "x": 2.650614617051869,
+        "y": 3.6358613273382776
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": null
+      "linkedName": "Middle Reef 2"
     }
   ],
   "rotationTargets": [],
@@ -48,7 +48,7 @@
   "folder": "Middle Red Auto",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": 55.56101069119635
+    "rotation": 53.6525417911147
   },
   "useDefaultConstraints": true
 }

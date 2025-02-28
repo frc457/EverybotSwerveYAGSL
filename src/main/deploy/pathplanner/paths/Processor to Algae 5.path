@@ -3,45 +3,45 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 6.095927291056056,
-        "y": 3.732490389638478
+        "x": 5.9933304884561425,
+        "y": 0.5937235686288159
       },
       "prevControl": null,
       "nextControl": {
-        "x": 6.03758287616244,
-        "y": 1.34036937900018
+        "x": 6.490429900999705,
+        "y": 0.27692053647750126
       },
       "isLocked": false,
-      "linkedName": null
+      "linkedName": "Processor"
     },
     {
       "anchor": {
-        "x": 4.037433510638298,
-        "y": 2.146309840425531
+        "x": 2.496000000000247,
+        "y": 3.4789999999958012
       },
       "prevControl": {
-        "x": 4.889261968085107,
-        "y": 1.8895944148936166
+        "x": 3.5686243688703687,
+        "y": 2.3484891508083074
       },
       "nextControl": {
-        "x": 2.9014915714577802,
-        "y": 2.488648507027878
+        "x": 2.2330816417853026,
+        "y": 3.7561073127129796
       },
       "isLocked": false,
       "linkedName": null
     },
     {
       "anchor": {
-        "x": 0.7084910168322262,
-        "y": 1.3003658374084341
+        "x": 1.9300162954609255,
+        "y": 5.793521686048515
       },
       "prevControl": {
-        "x": 2.4121479317258423,
-        "y": 2.478923018259499
+        "x": 2.0038401753528543,
+        "y": 5.5349210963120745
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": "Middle Red Coral"
+      "linkedName": "Algae 3"
     }
   ],
   "rotationTargets": [],
@@ -58,13 +58,13 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": 53.6525417911147
+    "rotation": -0.2850512775838496
   },
   "reversed": false,
-  "folder": "Middle Red Auto",
+  "folder": "Red Algae Auto",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": 0.0
+    "rotation": 90.0
   },
   "useDefaultConstraints": true
 }

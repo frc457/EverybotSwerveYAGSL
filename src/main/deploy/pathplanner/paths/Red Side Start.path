@@ -3,29 +3,29 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 7.254000000003645,
-        "y": 0.4662499999942122
+        "x": 7.236448613446172,
+        "y": 0.4759854399680933
       },
       "prevControl": null,
       "nextControl": {
-        "x": 7.750532799027367,
-        "y": -0.09185746233450337
+        "x": 7.795952714504771,
+        "y": -0.021949756773756657
       },
       "isLocked": false,
-      "linkedName": null
+      "linkedName": "Red Start"
     },
     {
       "anchor": {
-        "x": 5.3040000000036445,
-        "y": 2.659999999994213
+        "x": 5.0434122829604835,
+        "y": 2.4821183604429473
       },
       "prevControl": {
-        "x": 5.061368827633331,
-        "y": 2.886157563297179
+        "x": 4.735832589309279,
+        "y": 2.7151008124559133
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": null
+      "linkedName": "Coral 1 Red"
     }
   ],
   "rotationTargets": [],
@@ -42,7 +42,7 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": -59.420773127511104
+    "rotation": -60.26469692947282
   },
   "reversed": false,
   "folder": "Red Side Auto",
