@@ -3,29 +3,29 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 5.0434122829604835,
-        "y": 2.4821183604429473
+        "x": 1.3785860655737705,
+        "y": 0.8302766393442619
       },
       "prevControl": null,
       "nextControl": {
-        "x": 5.335912282956839,
-        "y": 1.7996183604487341
+        "x": 1.8121515119179947,
+        "y": 2.6367841089369506
       },
       "isLocked": false,
-      "linkedName": "Coral 1 Red"
+      "linkedName": "CORAL 1"
     },
     {
       "anchor": {
-        "x": 1.4471173377183681,
-        "y": 0.7746551346605542
+        "x": 3.6155952337877837,
+        "y": 2.672412492813096
       },
       "prevControl": {
-        "x": 0.9821064922764016,
-        "y": 0.6102946444232586
+        "x": 3.4158413738273636,
+        "y": 2.181895157602243
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": "Coral Red"
+      "linkedName": "REEF 1"
     }
   ],
   "rotationTargets": [],
@@ -42,13 +42,13 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": 54.023129712890665
+    "rotation": -120.78414652632648
   },
   "reversed": false,
   "folder": "Red Side Auto",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": -60.26469692947282
+    "rotation": 54.61934155792189
   },
   "useDefaultConstraints": true
 }

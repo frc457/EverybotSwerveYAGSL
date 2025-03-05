@@ -203,7 +203,7 @@ new CommandPS5Controller(OperatorConstants.OPERATOR_CONTROLLER_PORT);
   public Command getAutonomousCommand()
   {
     // An example command will be run in autonomous
-    return drivebase.getAutonomousCommand("Blue Side Auto");
+    return drivebase.getAutonomousCommand("RedSideAuto");
   }
 
   public void setMotorBrake(boolean brake)

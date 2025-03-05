@@ -45,7 +45,7 @@ public class ArmUpCommand extends Command {
 
     Timer timer = new Timer();
 
-    timer.schedule(task, 100);
+    timer.schedule(task, 500);
   }
 
   // Called every time the scheduler runs while the command is scheduled.

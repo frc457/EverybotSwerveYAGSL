@@ -13,7 +13,7 @@
         {
           "type": "path",
           "data": {
-            "pathName": "Middle R Start to Reef 1"
+            "pathName": "red side to reef"
           }
         },
         {
@@ -36,9 +36,21 @@
           }
         },
         {
+          "type": "named",
+          "data": {
+            "name": "ArmUpCommand"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "ArmDownCommand"
+          }
+        },
+        {
           "type": "path",
           "data": {
-            "pathName": "Middle R Reef to Coral 2"
+            "pathName": "reef to station 1"
           }
         },
         {
@@ -56,7 +68,7 @@
         {
           "type": "path",
           "data": {
-            "pathName": "Middle R Coral to Reef 3"
+            "pathName": "Station to reef 3"
           }
         },
         {
@@ -79,9 +91,21 @@
           }
         },
         {
+          "type": "named",
+          "data": {
+            "name": "ArmUpCommand"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "ArmDownCommand"
+          }
+        },
+        {
           "type": "path",
           "data": {
-            "pathName": "Middle Reef to Coral 4"
+            "pathName": "reef to station 2"
           }
         },
         {
@@ -99,7 +123,7 @@
         {
           "type": "path",
           "data": {
-            "pathName": "Middle R Coral to Reef 5"
+            "pathName": "Station to reef 3"
           }
         },
         {
@@ -119,6 +143,18 @@
                 }
               }
             ]
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "ArmUpCommand"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "ArmDownCommand"
           }
         }
       ]
