@@ -3,29 +3,29 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 7.264549180327867,
-        "y": 7.555379098360655
-      },
-      "prevControl": null,
-      "nextControl": {
-        "x": 7.33351870450732,
-        "y": 6.669576003250574
-      },
-      "isLocked": false,
-      "linkedName": null
-    },
-    {
-      "anchor": {
         "x": 5.156669964241436,
         "y": 5.454737540902115
       },
+      "prevControl": null,
+      "nextControl": {
+        "x": 5.009666011630727,
+        "y": 6.081645161171018
+      },
+      "isLocked": true,
+      "linkedName": "Blue Reef 1"
+    },
+    {
+      "anchor": {
+        "x": 1.3810119088074737,
+        "y": 7.208906011258194
+      },
       "prevControl": {
-        "x": 5.648371087355831,
-        "y": 6.040936467962344
+        "x": 1.6175443655581148,
+        "y": 7.071684860063804
       },
       "nextControl": null,
-      "isLocked": false,
-      "linkedName": "Reef 1 Blue"
+      "isLocked": true,
+      "linkedName": "Blue Coral Close"
     }
   ],
   "rotationTargets": [],
@@ -42,13 +42,13 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": 60.05805746972679
+    "rotation": -54.26452398513299
   },
   "reversed": false,
   "folder": "Blue Side Auto",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": 0.0
+    "rotation": 60.05805746972679
   },
   "useDefaultConstraints": true
 }

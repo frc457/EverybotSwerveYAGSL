@@ -13,7 +13,7 @@
         {
           "type": "path",
           "data": {
-            "pathName": "Blue Side Reef Score"
+            "pathName": "Blue Start to Reef 1 (1)"
           }
         },
         {
@@ -50,7 +50,7 @@
         {
           "type": "path",
           "data": {
-            "pathName": "Reef to Coral 1"
+            "pathName": "Blue Reef 1 to Blue Coral Close (2)"
           }
         },
         {
@@ -68,7 +68,7 @@
         {
           "type": "path",
           "data": {
-            "pathName": "Coral to Reef 2"
+            "pathName": "Blue Coral Close to Blue Reef 2 (3)"
           }
         },
         {
@@ -105,7 +105,7 @@
         {
           "type": "path",
           "data": {
-            "pathName": "Coral to Reef 3"
+            "pathName": "Blue Reef 2 to Blue Coral Close (4) "
           }
         },
         {
@@ -123,7 +123,7 @@
         {
           "type": "path",
           "data": {
-            "pathName": "Coral to Reef 4"
+            "pathName": "Blue Coral Close to Blue Reef 2 (5)"
           }
         },
         {

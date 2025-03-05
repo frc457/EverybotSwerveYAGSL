@@ -11,21 +11,21 @@
         "x": 3.6860561012588495,
         "y": 5.7164579171316054
       },
-      "isLocked": false,
-      "linkedName": "Reef 2 Blue"
+      "isLocked": true,
+      "linkedName": "Blue Reef 2"
     },
     {
       "anchor": {
-        "x": 1.4712573678588863,
-        "y": 7.104085379204443
+        "x": 1.3810119088074737,
+        "y": 7.208906011258194
       },
       "prevControl": {
-        "x": 2.406515706512996,
-        "y": 4.992993109803282
+        "x": 2.316270247461583,
+        "y": 5.097813741857033
       },
       "nextControl": null,
-      "isLocked": false,
-      "linkedName": "Coral Station Blue"
+      "isLocked": true,
+      "linkedName": "Blue Coral Close"
     }
   ],
   "rotationTargets": [],
@@ -42,7 +42,7 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": -52.96961039432119
+    "rotation": -54.26452398513299
   },
   "reversed": false,
   "folder": "Blue Side Auto",

@@ -3,16 +3,16 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 1.4712573678588863,
-        "y": 7.104085379204443
+        "x": 1.3810119088074737,
+        "y": 7.208906011258194
       },
       "prevControl": null,
       "nextControl": {
-        "x": 2.395375274038634,
-        "y": 5.061641611317764
+        "x": 2.3051298149872217,
+        "y": 5.166462243371515
       },
-      "isLocked": false,
-      "linkedName": "Coral Station Blue"
+      "isLocked": true,
+      "linkedName": "Blue Coral Close"
     },
     {
       "anchor": {
@@ -24,8 +24,8 @@
         "y": 6.1520866437832495
       },
       "nextControl": null,
-      "isLocked": false,
-      "linkedName": "Reef 2 Blue"
+      "isLocked": true,
+      "linkedName": "Blue Reef 2"
     }
   ],
   "rotationTargets": [],
@@ -48,7 +48,7 @@
   "folder": "Blue Side Auto",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": -52.96961039432119
+    "rotation": -54.26452398513299
   },
   "useDefaultConstraints": true
 }
