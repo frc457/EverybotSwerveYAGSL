@@ -16,12 +16,12 @@
     },
     {
       "anchor": {
-        "x": 5.304542870438472,
-        "y": 2.691051638084033
+        "x": 5.0614922118545245,
+        "y": 2.939978535460505
       },
       "prevControl": {
-        "x": 5.640089265111979,
-        "y": 2.3125014550143117
+        "x": 5.397038606528032,
+        "y": 2.5614283523907835
       },
       "nextControl": null,
       "isLocked": false,
@@ -35,8 +35,8 @@
   "globalConstraints": {
     "maxVelocity": 3.0,
     "maxAcceleration": 3.0,
-    "maxAngularVelocity": 540.0,
-    "maxAngularAcceleration": 720.0,
+    "maxAngularVelocity": 360.0,
+    "maxAngularAcceleration": 180.0,
     "nominalVoltage": 12.0,
     "unlimited": false
   },
@@ -45,7 +45,7 @@
     "rotation": -59.51669995885471
   },
   "reversed": false,
-  "folder": "Red Side Auto",
+  "folder": "RightAuto",
   "idealStartingState": {
     "velocity": 0,
     "rotation": 0.0

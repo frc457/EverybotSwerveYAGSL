@@ -3,28 +3,28 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 1.3810119088074737,
-        "y": 7.208906011258194
+        "x": 1.0332017730157488,
+        "y": 7.1776692747432005
       },
       "prevControl": null,
       "nextControl": {
-        "x": 2.3051298149872217,
-        "y": 5.166462243371515
+        "x": 2.0724378006999102,
+        "y": 5.31257264201258
       },
-      "isLocked": true,
+      "isLocked": false,
       "linkedName": "Blue Coral Close"
     },
     {
       "anchor": {
-        "x": 3.6756631232141763,
-        "y": 5.382548146217566
+        "x": 3.8977088303198464,
+        "y": 5.070664324929435
       },
       "prevControl": {
-        "x": 2.8188146275046404,
-        "y": 6.1520866437832495
+        "x": 3.0674628061166462,
+        "y": 5.762382584937064
       },
       "nextControl": null,
-      "isLocked": true,
+      "isLocked": false,
       "linkedName": "Blue Reef 2"
     }
   ],
@@ -35,8 +35,8 @@
   "globalConstraints": {
     "maxVelocity": 3.0,
     "maxAcceleration": 3.0,
-    "maxAngularVelocity": 540.0,
-    "maxAngularAcceleration": 720.0,
+    "maxAngularVelocity": 360.0,
+    "maxAngularAcceleration": 180.0,
     "nominalVoltage": 12.0,
     "unlimited": false
   },
@@ -45,7 +45,7 @@
     "rotation": 119.74488129694218
   },
   "reversed": false,
-  "folder": "Blue Side Auto",
+  "folder": "LeftAuto",
   "idealStartingState": {
     "velocity": 0,
     "rotation": -54.26452398513299

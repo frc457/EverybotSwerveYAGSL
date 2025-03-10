@@ -16,15 +16,15 @@
     },
     {
       "anchor": {
-        "x": 5.975985840826654,
+        "x": 5.689741325880655,
         "y": 3.9666555851063823
       },
       "prevControl": {
-        "x": 6.39962029333998,
+        "x": 6.113375778393981,
         "y": 3.9758093096069738
       },
       "nextControl": null,
-      "isLocked": true,
+      "isLocked": false,
       "linkedName": "Middle Reef 1"
     }
   ],
@@ -35,8 +35,8 @@
   "globalConstraints": {
     "maxVelocity": 3.0,
     "maxAcceleration": 3.0,
-    "maxAngularVelocity": 540.0,
-    "maxAngularAcceleration": 720.0,
+    "maxAngularVelocity": 360.0,
+    "maxAngularAcceleration": 180.0,
     "nominalVoltage": 12.0,
     "unlimited": false
   },

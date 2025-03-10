@@ -3,25 +3,25 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 3.6756631232141763,
-        "y": 5.382548146217566
+        "x": 3.8977088303198464,
+        "y": 5.070664324929435
       },
       "prevControl": null,
       "nextControl": {
-        "x": 3.6860561012588495,
-        "y": 5.7164579171316054
+        "x": 3.9135854408019637,
+        "y": 5.390851819662089
       },
       "isLocked": true,
       "linkedName": "Blue Reef 2"
     },
     {
       "anchor": {
-        "x": 1.3810119088074737,
-        "y": 7.208906011258194
+        "x": 1.0332017730157488,
+        "y": 7.1776692747432005
       },
       "prevControl": {
-        "x": 2.316270247461583,
-        "y": 5.097813741857033
+        "x": 2.6268567109032537,
+        "y": 4.897958905162518
       },
       "nextControl": null,
       "isLocked": true,
@@ -35,8 +35,8 @@
   "globalConstraints": {
     "maxVelocity": 3.0,
     "maxAcceleration": 3.0,
-    "maxAngularVelocity": 540.0,
-    "maxAngularAcceleration": 720.0,
+    "maxAngularVelocity": 360.0,
+    "maxAngularAcceleration": 180.0,
     "nominalVoltage": 12.0,
     "unlimited": false
   },
@@ -45,7 +45,7 @@
     "rotation": -54.26452398513299
   },
   "reversed": false,
-  "folder": "Blue Side Auto",
+  "folder": "LeftAuto",
   "idealStartingState": {
     "velocity": 0,
     "rotation": 119.74488129694218

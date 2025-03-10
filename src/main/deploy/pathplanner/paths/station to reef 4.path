@@ -3,25 +3,25 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 1.3785860655737705,
-        "y": 0.8302766393442619
+        "x": 1.234127610203601,
+        "y": 0.6947882116456845
       },
       "prevControl": null,
       "nextControl": {
-        "x": 1.6831463318002178,
-        "y": 1.7942696513794836
+        "x": 1.906125829809404,
+        "y": 2.450661111642236
       },
       "isLocked": false,
       "linkedName": "CORAL 1"
     },
     {
       "anchor": {
-        "x": 3.6155952337877837,
-        "y": 2.672412492813096
+        "x": 3.885612246265498,
+        "y": 3.010586240203484
       },
       "prevControl": {
-        "x": 2.6675156272139584,
-        "y": 2.3172149068452095
+        "x": 2.545305278931207,
+        "y": 2.2551700664690513
       },
       "nextControl": null,
       "isLocked": false,
@@ -35,8 +35,8 @@
   "globalConstraints": {
     "maxVelocity": 3.0,
     "maxAcceleration": 3.0,
-    "maxAngularVelocity": 540.0,
-    "maxAngularAcceleration": 720.0,
+    "maxAngularVelocity": 360.0,
+    "maxAngularAcceleration": 180.0,
     "nominalVoltage": 12.0,
     "unlimited": false
   },
@@ -45,7 +45,7 @@
     "rotation": -120.78414652632648
   },
   "reversed": false,
-  "folder": "Red Side Auto",
+  "folder": "RightAuto",
   "idealStartingState": {
     "velocity": 0,
     "rotation": 54.61934155792189
