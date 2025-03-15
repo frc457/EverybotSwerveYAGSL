@@ -150,12 +150,6 @@
           "data": {
             "name": "ArmUpCommand"
           }
-        },
-        {
-          "type": "named",
-          "data": {
-            "name": "ArmDownCommand"
-          }
         }
       ]
     }

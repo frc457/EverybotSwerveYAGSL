@@ -127,28 +127,9 @@
           }
         },
         {
-          "type": "parallel",
-          "data": {
-            "commands": [
-              {
-                "type": "named",
-                "data": {
-                  "name": "ArmDownCommand"
-                }
-              },
-              {
-                "type": "named",
-                "data": {
-                  "name": "CoralStackCommand"
-                }
-              }
-            ]
-          }
-        },
-        {
           "type": "named",
           "data": {
-            "name": "ArmUpCommand"
+            "name": "CoralStackCommand"
           }
         }
       ]

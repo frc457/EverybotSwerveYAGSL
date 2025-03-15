@@ -146,14 +146,16 @@ new CommandPS5Controller(OperatorConstants.OPERATOR_CONTROLLER_PORT);
      * make sure the rollers do not wear on the plastic basket.
      */
     m_operatorController.square().whileTrue(new CoralOutCommand(m_roller));
-    m_operatorController.cross().whileTrue(new CoralStackCommand(m_roller));
+    m_operatorController.triangle().whileTrue(new CoralStackCommand(m_roller));
+    m_operatorController.cross().whileTrue(new ClimberUpCommand(m_climber));
+    m_operatorController.circle().whileTrue(new ClimberDownCommand(m_climber));
 
     /**
      * POV is a direction on the D-Pad or directional arrow pad of the controller,
      * the direction of this will be different depending on how your winch is wound
      */
-    m_operatorController.pov(90).whileTrue(new ClimberUpCommand(m_climber));
-    m_operatorController.pov(270).whileTrue(new ClimberDownCommand(m_climber));
+    //m_operatorController.pov(90).whileTrue(new ClimberUpCommand(m_climber));
+    //m_operatorController.pov(270).whileTrue(new ClimberDownCommand(m_climber));
 
     if (RobotBase.isSimulation())
     {
@@ -203,7 +205,7 @@ new CommandPS5Controller(OperatorConstants.OPERATOR_CONTROLLER_PORT);
   public Command getAutonomousCommand()
   {
     // An example command will be run in autonomous
-    return drivebase.getAutonomousCommand("RedSideAuto");
+    return drivebase.getAutonomousCommand("RightAuto");
   }
 
   public void setMotorBrake(boolean brake)
