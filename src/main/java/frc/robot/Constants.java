@@ -53,7 +53,7 @@ public final class Constants
     public static final int ROLLER_MOTOR_CURRENT_LIMIT = 60;
     public static final double ROLLER_MOTOR_VOLTAGE_COMP = 10;
     public static final double ROLLER_CORAL_OUT = .60;
-    public static final double ROLLER_ALGAE_IN = -1.0;
+    public static final double ROLLER_ALGAE_IN = -.80;
     public static final double ROLLER_ALGAE_OUT = 0.55;
     public static final double ROLLER_CORAL_STACK = 1;
   }
