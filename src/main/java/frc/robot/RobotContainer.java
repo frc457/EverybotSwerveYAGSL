@@ -22,6 +22,8 @@ import frc.robot.commands.AlgaeInCommand;
 import frc.robot.commands.AlgaeOutCommand;
 import frc.robot.commands.ArmDownCommand;
 import frc.robot.commands.ArmUpCommand;
+import frc.robot.commands.AutoAlgaeInCommand;
+import frc.robot.commands.AutoAlgaeOutCommand;
 import frc.robot.commands.ClimberDownCommand;
 import frc.robot.commands.ClimberUpCommand;
 import frc.robot.commands.CoralOutCommand;
@@ -109,6 +111,8 @@ new CommandPS5Controller(OperatorConstants.OPERATOR_CONTROLLER_PORT);
     NamedCommands.registerCommand("CoralStackCommand", new CoralStackCommand(m_roller));
     NamedCommands.registerCommand("ArmUpCommand", new ArmUpCommand(m_arm));
     NamedCommands.registerCommand("ArmDownCommand", new ArmDownCommand(m_arm));
+    NamedCommands.registerCommand("AutoAlgaeInCommand", new AutoAlgaeInCommand(m_roller));
+    NamedCommands.registerCommand("AutoAlgaeOutCommand", new AutoAlgaeOutCommand(m_roller));
   }
 
   /**
@@ -205,7 +209,7 @@ new CommandPS5Controller(OperatorConstants.OPERATOR_CONTROLLER_PORT);
   public Command getAutonomousCommand()
   {
     // An example command will be run in autonomous
-    return drivebase.getAutonomousCommand("RightAuto");
+    return drivebase.getAutonomousCommand("MiddleAuto");
   }
 
   public void setMotorBrake(boolean brake)

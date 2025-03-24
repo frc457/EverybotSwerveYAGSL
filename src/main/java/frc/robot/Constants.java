@@ -56,6 +56,10 @@ public final class Constants
     public static final double ROLLER_ALGAE_IN = -.80;
     public static final double ROLLER_ALGAE_OUT = 0.55;
     public static final double ROLLER_CORAL_STACK = 1;
+
+    //Auto Roller Constants
+    public static final double Auto_ROLLER_ALGAE_IN = -.80;
+    public static final double Auto_ROLLER_ALGAE_OUT = 0.55;
   }
 
   public static final class ArmConstants {

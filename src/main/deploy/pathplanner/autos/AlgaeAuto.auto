@@ -5,76 +5,9 @@
     "data": {
       "commands": [
         {
-          "type": "named",
-          "data": {
-            "name": "ArmDownCommand"
-          }
-        },
-        {
           "type": "path",
           "data": {
-            "pathName": "Middle Start to Middle Reef 1"
-          }
-        },
-        {
-          "type": "parallel",
-          "data": {
-            "commands": [
-              {
-                "type": "named",
-                "data": {
-                  "name": "ArmDownCommand"
-                }
-              },
-              {
-                "type": "named",
-                "data": {
-                  "name": "CoralOutCommand"
-                }
-              }
-            ]
-          }
-        },
-        {
-          "type": "named",
-          "data": {
-            "name": "ArmUpCommand"
-          }
-        },
-        {
-          "type": "named",
-          "data": {
-            "name": "ArmDownCommand"
-          }
-        },
-        {
-          "type": "wait",
-          "data": {
-            "waitTime": 1.5
-          }
-        },
-        {
-          "type": "path",
-          "data": {
-            "pathName": "Middle Reef to Station 2"
-          }
-        },
-        {
-          "type": "named",
-          "data": {
-            "name": "ArmDownCommand"
-          }
-        },
-        {
-          "type": "wait",
-          "data": {
-            "waitTime": 0.4
-          }
-        },
-        {
-          "type": "path",
-          "data": {
-            "pathName": "Station to Reef 3"
+            "pathName": "Redstart to Reef 1"
           }
         },
         {
@@ -111,13 +44,119 @@
         {
           "type": "path",
           "data": {
-            "pathName": "Reef to Algae Hit 4"
+            "pathName": "Reef to Algae 2"
           }
         },
         {
-          "type": "named",
+          "type": "parallel",
           "data": {
-            "name": "ArmDownCommand"
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "ArmUpCommand"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "AutoAlgaeInCommand"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0.2
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Algae to Processor 3"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "ArmDownCommand"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "AutoAlgaeOutCommand"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0.5
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Processor to Algae 4"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "ArmUpCommand"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "AutoAlgaeInCommand"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0.2
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Algae to Processor 5"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "ArmDownCommand"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "AutoAlgaeOutCommand"
+                }
+              }
+            ]
           }
         }
       ]

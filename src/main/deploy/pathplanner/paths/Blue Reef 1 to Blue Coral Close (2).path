@@ -11,20 +11,20 @@
         "x": 4.959571809127087,
         "y": 5.733721580496135
       },
-      "isLocked": true,
+      "isLocked": false,
       "linkedName": "Blue Reef 1"
     },
     {
       "anchor": {
-        "x": 1.0332017730157488,
-        "y": 7.1776692747432005
+        "x": 1.0385294056595955,
+        "y": 7.295558574816587
       },
       "prevControl": {
-        "x": 1.2697342297663898,
-        "y": 7.04044812354881
+        "x": 1.2750618624102368,
+        "y": 7.158337423622196
       },
       "nextControl": null,
-      "isLocked": true,
+      "isLocked": false,
       "linkedName": "Blue Coral Close"
     }
   ],
@@ -34,7 +34,7 @@
   "eventMarkers": [],
   "globalConstraints": {
     "maxVelocity": 4.7,
-    "maxAcceleration": 3.55,
+    "maxAcceleration": 3.0,
     "maxAngularVelocity": 180.0,
     "maxAngularAcceleration": 135.0,
     "nominalVoltage": 12.0,

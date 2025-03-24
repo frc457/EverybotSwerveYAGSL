@@ -8,24 +8,24 @@
       },
       "prevControl": null,
       "nextControl": {
-        "x": 3.836756485867719,
-        "y": 5.323276403005631
+        "x": 2.9359210450657547,
+        "y": 6.989674583343542
       },
-      "isLocked": true,
+      "isLocked": false,
       "linkedName": "Blue Reef 2"
     },
     {
       "anchor": {
-        "x": 1.0385294056595955,
-        "y": 7.295558574816587
+        "x": 1.0822500000000002,
+        "y": 5.6825
       },
       "prevControl": {
-        "x": 2.6321843435471006,
-        "y": 5.015848205235905
+        "x": 1.70625,
+        "y": 6.45275
       },
       "nextControl": null,
-      "isLocked": true,
-      "linkedName": "Blue Coral Close"
+      "isLocked": false,
+      "linkedName": null
     }
   ],
   "rotationTargets": [],
@@ -42,10 +42,10 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": -54.26452398513299
+    "rotation": 48.608468852566375
   },
   "reversed": false,
-  "folder": "LeftAuto",
+  "folder": "MiddleAuto",
   "idealStartingState": {
     "velocity": 0,
     "rotation": 119.74488129694218
