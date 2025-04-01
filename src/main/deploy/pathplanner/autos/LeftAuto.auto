@@ -144,18 +144,6 @@
               }
             ]
           }
-        },
-        {
-          "type": "named",
-          "data": {
-            "name": "AutoArmDownCommand"
-          }
-        },
-        {
-          "type": "named",
-          "data": {
-            "name": "AutoArmUpCommand"
-          }
         }
       ]
     }

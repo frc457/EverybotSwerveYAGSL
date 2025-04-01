@@ -16,16 +16,16 @@
     },
     {
       "anchor": {
-        "x": 3.8536810597781233,
-        "y": 5.061138732648677
+        "x": 3.26170587261862,
+        "y": 4.016862304184912
       },
       "prevControl": {
-        "x": 4.146889646485681,
-        "y": 5.114046048334981
+        "x": 3.5549144593261777,
+        "y": 4.069769619871216
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": "Blue Reef 2"
+      "linkedName": "Middle Reef Back"
     }
   ],
   "rotationTargets": [],
@@ -34,7 +34,7 @@
   "eventMarkers": [],
   "globalConstraints": {
     "maxVelocity": 4.7,
-    "maxAcceleration": 3.0,
+    "maxAcceleration": 3.2,
     "maxAngularVelocity": 180.0,
     "maxAngularAcceleration": 135.0,
     "nominalVoltage": 12.0,
@@ -42,7 +42,7 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": 119.74488129694218
+    "rotation": 179.99999999999977
   },
   "reversed": false,
   "folder": "LeftAuto",
