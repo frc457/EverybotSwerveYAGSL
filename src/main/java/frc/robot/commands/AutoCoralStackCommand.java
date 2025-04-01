@@ -6,19 +6,28 @@ package frc.robot.commands;
 
 import frc.robot.Constants.RollerConstants;
 import frc.robot.subsystems.RollerSubsystem;
+
+import java.util.Timer;
+import java.util.TimerTask;
+
 import edu.wpi.first.wpilibj2.command.Command;
 
-/** An CoralOutCommand that uses a roller subsystem. */
-public class CoralOutCommand extends Command {
+/** An CoralStackCommand that uses a roller subsystem.
+ *  Used when coral is already in the L1 to get it past the first once.
+ */
+public class AutoCoralStackCommand extends Command {
   private final RollerSubsystem m_roller;
-  
+  private boolean finished = false;
+ 
 
   /**
-   * Use to score coral into L1.
+   * Use this command when there is already coral in L1.
+   * 
+   * May be less reliable if there is no coral already in L1.
    *
    * @param roller The subsystem used by this command.
    */
-  public CoralOutCommand(RollerSubsystem roller) {
+  public AutoCoralStackCommand(RollerSubsystem roller) {
     m_roller = roller;
     // Use addRequirements() here to declare subsystem dependencies.
     addRequirements(roller);
@@ -26,16 +35,28 @@ public class CoralOutCommand extends Command {
 
   // Called when the command is initially scheduled.
   @Override
-  public void initialize() {}
+  public void initialize() {
+    finished = false;
+
+    TimerTask task = new TimerTask() {
+      public void run() {
+        finished = true;
+      }
+    };
+
+    Timer timer = new Timer();
+
+    timer.schedule(task, 250);
+  }
 
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {
-    m_roller.runRoller(RollerConstants.ROLLER_CORAL_OUT);
+    m_roller.runRoller(RollerConstants.Auto_ROLLER_CORAL_STACK);
   }
 
   // Called once the command ends or is interrupted. Ensures the roller
-  // is not running after we let go of the button. 
+  // is not running after we let go of the button.
   @Override
   public void end(boolean interrupted) {
     m_roller.runRoller(0);
@@ -44,6 +65,6 @@ public class CoralOutCommand extends Command {
   // Returns true when the command should end.
   @Override
   public boolean isFinished() {
-    return false;
+    return finished;
   }
 }

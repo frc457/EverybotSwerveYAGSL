@@ -6,9 +6,6 @@ package frc.robot.commands;
 
 import frc.robot.Constants.RollerConstants;
 import frc.robot.subsystems.RollerSubsystem;
-
-
-
 import edu.wpi.first.wpilibj2.command.Command;
 
 /** A command to take Algae into the robot. */
@@ -29,9 +26,7 @@ public class AlgaeInCommand extends Command {
 
   // Called when the command is initially scheduled.
   @Override
-  public void initialize() {
-   
-  }
+  public void initialize() {}
 
   // Called every time the scheduler runs while the command is scheduled.
   @Override

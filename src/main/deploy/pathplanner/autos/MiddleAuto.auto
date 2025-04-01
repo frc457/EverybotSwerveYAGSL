@@ -7,7 +7,7 @@
         {
           "type": "named",
           "data": {
-            "name": "ArmDownCommand"
+            "name": "AutoArmUpCommand"
           }
         },
         {
@@ -23,13 +23,13 @@
               {
                 "type": "named",
                 "data": {
-                  "name": "ArmDownCommand"
+                  "name": "AutoArmUpCommand"
                 }
               },
               {
                 "type": "named",
                 "data": {
-                  "name": "CoralOutCommand"
+                  "name": "AutoCoralOutCommand"
                 }
               }
             ]
@@ -38,86 +38,13 @@
         {
           "type": "named",
           "data": {
-            "name": "ArmUpCommand"
+            "name": "AutoArmDownCommand"
           }
         },
         {
           "type": "named",
           "data": {
-            "name": "ArmDownCommand"
-          }
-        },
-        {
-          "type": "wait",
-          "data": {
-            "waitTime": 1.5
-          }
-        },
-        {
-          "type": "path",
-          "data": {
-            "pathName": "Middle Reef to Station 2"
-          }
-        },
-        {
-          "type": "named",
-          "data": {
-            "name": "ArmDownCommand"
-          }
-        },
-        {
-          "type": "wait",
-          "data": {
-            "waitTime": 0.4
-          }
-        },
-        {
-          "type": "path",
-          "data": {
-            "pathName": "Station to Reef 3"
-          }
-        },
-        {
-          "type": "parallel",
-          "data": {
-            "commands": [
-              {
-                "type": "named",
-                "data": {
-                  "name": "ArmDownCommand"
-                }
-              },
-              {
-                "type": "named",
-                "data": {
-                  "name": "CoralOutCommand"
-                }
-              }
-            ]
-          }
-        },
-        {
-          "type": "named",
-          "data": {
-            "name": "ArmUpCommand"
-          }
-        },
-        {
-          "type": "named",
-          "data": {
-            "name": "ArmDownCommand"
-          }
-        },
-        {
-          "type": "path",
-          "data": {
-            "pathName": "Reef to Algae Hit 4"
-          }
-        },
-        {
-          "type": "named",
-          "data": {
-            "name": "ArmDownCommand"
+            "name": "AutoArmUpCommand"
           }
         }
       ]

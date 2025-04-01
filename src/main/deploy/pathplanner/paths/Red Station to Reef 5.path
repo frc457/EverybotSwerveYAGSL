@@ -3,29 +3,29 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 1.959908422999368,
-        "y": 4.020691322630162
+        "x": 1.287,
+        "y": 0.6904999999999996
       },
       "prevControl": null,
       "nextControl": {
-        "x": 2.27175,
-        "y": 2.41625
+        "x": 1.7257499999950718,
+        "y": 1.6947499999968878
       },
       "isLocked": false,
-      "linkedName": "Algae 2"
+      "linkedName": "CORAL 1"
     },
     {
       "anchor": {
-        "x": 5.98009379259312,
-        "y": 0.5707864279469027
+        "x": 3.26170587261862,
+        "y": 4.016862304184912
       },
       "prevControl": {
-        "x": 6.122999999999999,
-        "y": 1.9775
+        "x": 2.108739855091721,
+        "y": 2.686378360512947
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": "Processor"
+      "linkedName": "Middle Reef Back"
     }
   ],
   "rotationTargets": [],
@@ -42,13 +42,13 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": 90.06410444689541
+    "rotation": 179.99999999999977
   },
   "reversed": false,
-  "folder": "AlgaeAuto",
+  "folder": "RightAuto",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": 0.02128469861743951
+    "rotation": 54.191396314537556
   },
   "useDefaultConstraints": true
 }

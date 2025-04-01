@@ -6,10 +6,6 @@ package frc.robot.commands;
 
 import frc.robot.Constants.RollerConstants;
 import frc.robot.subsystems.RollerSubsystem;
-
-import java.util.Timer;
-import java.util.TimerTask;
-
 import edu.wpi.first.wpilibj2.command.Command;
 
 /** An CoralStackCommand that uses a roller subsystem.
@@ -17,7 +13,7 @@ import edu.wpi.first.wpilibj2.command.Command;
  */
 public class CoralStackCommand extends Command {
   private final RollerSubsystem m_roller;
-  private boolean finished = false;
+  
  
 
   /**
@@ -35,19 +31,7 @@ public class CoralStackCommand extends Command {
 
   // Called when the command is initially scheduled.
   @Override
-  public void initialize() {
-    finished = false;
-
-    TimerTask task = new TimerTask() {
-      public void run() {
-        finished = true;
-      }
-    };
-
-    Timer timer = new Timer();
-
-    timer.schedule(task, 250);
-  }
+  public void initialize() {}
 
   // Called every time the scheduler runs while the command is scheduled.
   @Override
@@ -65,6 +49,6 @@ public class CoralStackCommand extends Command {
   // Returns true when the command should end.
   @Override
   public boolean isFinished() {
-    return finished;
+    return false;
   }
 }

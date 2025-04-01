@@ -6,23 +6,28 @@ package frc.robot.commands;
 
 import frc.robot.Constants.ArmConstants;
 import frc.robot.subsystems.ArmSubsystem;
+
+import java.util.Timer;
+import java.util.TimerTask;
+
 import edu.wpi.first.wpilibj2.command.Command;
 
-/** An ArmUpCommand that uses an Arm subsystem. */
-public class ArmUpCommand extends Command {
+/** An ArmDown command that uses an Arm subsystem. */
+public class AutoArmDownCommand extends Command {
   private final ArmSubsystem m_arm;
-  
+  private boolean finished = false;
+
 
 
   /**
-   * Powers the arm up, when finished passively holds the arm up.
+   * Powers the arm down, when finished passively holds the arm down.
    * 
-   * We recommend that you use this to only move the arm into the hardstop
-   * and let the passive portion hold the arm up.
+   * We recommend that you use this to only move the arm into the paracord
+   * and let the passive portion hold the arm down.
    *
    * @param arm The subsystem used by this command.
    */
-  public ArmUpCommand(ArmSubsystem arm) {
+  public AutoArmDownCommand(ArmSubsystem arm) {
     m_arm = arm;
     // Use addRequirements() here to declare subsystem dependencies.
     addRequirements(arm);
@@ -30,25 +35,37 @@ public class ArmUpCommand extends Command {
 
   // Called when the command is initially scheduled.
   @Override
-  public void initialize() {}
+  public void initialize() {
+    finished = false;
+
+    TimerTask task = new TimerTask() {
+      public void run() {
+        finished = true;
+      }
+    };
+
+    Timer timer = new Timer();
+
+    timer.schedule(task, 250);
+  }
 
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {
-    m_arm.runArm(ArmConstants.ARM_SPEED_UP);
+    m_arm.runArm(ArmConstants.Auto_ARM_SPEED_DOWN);
   }
 
   // Called once the command ends or is interrupted.
-  // Here we run a command that will hold the arm up after to ensure the arm does
-  // not drop due to gravity.
+  // Here we run arm down at low speed to ensure it stays down
+  // When the next command is caled it will override this command
   @Override
   public void end(boolean interrupted) {
-    m_arm.runArm(ArmConstants.ARM_HOLD_UP);
+    m_arm.runArm(ArmConstants.ARM_HOLD_DOWN);
   }
 
   // Returns true when the command should end.
   @Override
   public boolean isFinished() {
-    return false;
+    return finished;
   }
 }

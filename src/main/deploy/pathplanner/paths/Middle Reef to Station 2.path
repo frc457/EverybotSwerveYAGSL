@@ -3,13 +3,13 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 5.689741325880655,
+        "x": 5.715106696184083,
         "y": 3.9666555851063823
       },
       "prevControl": null,
       "nextControl": {
-        "x": 7.16625,
-        "y": 5.26325
+        "x": 7.191615370303429,
+        "y": 5.263250000000001
       },
       "isLocked": false,
       "linkedName": "Middle Reef 1"
@@ -32,12 +32,12 @@
     },
     {
       "anchor": {
-        "x": 1.0385294056595955,
-        "y": 7.295558574816587
+        "x": 1.0979187834244528,
+        "y": 7.1858924225927465
       },
       "prevControl": {
-        "x": 3.555837420467939,
-        "y": 7.486212809786484
+        "x": 3.615226798232796,
+        "y": 7.376546657562644
       },
       "nextControl": null,
       "isLocked": false,
@@ -64,7 +64,7 @@
   "folder": "MiddleAuto",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": 0.0
+    "rotation": 0.31182277232983724
   },
   "useDefaultConstraints": true
 }

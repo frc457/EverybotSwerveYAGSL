@@ -5,15 +5,9 @@
     "data": {
       "commands": [
         {
-          "type": "named",
-          "data": {
-            "name": "ArmDownCommand"
-          }
-        },
-        {
           "type": "path",
           "data": {
-            "pathName": "red side to reef"
+            "pathName": "Red Start to Reef 1"
           }
         },
         {
@@ -23,13 +17,13 @@
               {
                 "type": "named",
                 "data": {
-                  "name": "ArmDownCommand"
+                  "name": "AutoArmUpCommand"
                 }
               },
               {
                 "type": "named",
                 "data": {
-                  "name": "CoralOutCommand"
+                  "name": "AutoCoralOutCommand"
                 }
               }
             ]
@@ -38,25 +32,25 @@
         {
           "type": "named",
           "data": {
-            "name": "ArmUpCommand"
+            "name": "AutoArmDownCommand"
           }
         },
         {
           "type": "named",
           "data": {
-            "name": "ArmDownCommand"
+            "name": "AutoArmUpCommand"
           }
         },
         {
           "type": "path",
           "data": {
-            "pathName": "reef to station 1"
+            "pathName": "Reef to Station 2"
           }
         },
         {
           "type": "named",
           "data": {
-            "name": "ArmDownCommand"
+            "name": "AutoArmUpCommand"
           }
         },
         {
@@ -68,7 +62,7 @@
         {
           "type": "path",
           "data": {
-            "pathName": "Station to reef 3"
+            "pathName": "Red Station to Reef 3"
           }
         },
         {
@@ -78,13 +72,13 @@
               {
                 "type": "named",
                 "data": {
-                  "name": "ArmDownCommand"
+                  "name": "AutoArmUpCommand"
                 }
               },
               {
                 "type": "named",
                 "data": {
-                  "name": "CoralOutCommand"
+                  "name": "AutoCoralOutCommand"
                 }
               }
             ]
@@ -93,25 +87,25 @@
         {
           "type": "named",
           "data": {
-            "name": "ArmUpCommand"
+            "name": "AutoArmDownCommand"
           }
         },
         {
           "type": "named",
           "data": {
-            "name": "ArmDownCommand"
+            "name": "AutoArmUpCommand"
           }
         },
         {
           "type": "path",
           "data": {
-            "pathName": "reef to station 2"
+            "pathName": "Reef to Station 4"
           }
         },
         {
           "type": "named",
           "data": {
-            "name": "ArmDownCommand"
+            "name": "AutoArmUpCommand"
           }
         },
         {
@@ -123,7 +117,7 @@
         {
           "type": "path",
           "data": {
-            "pathName": "Station to reef 3"
+            "pathName": "Red Station to Reef 5"
           }
         },
         {
@@ -133,28 +127,16 @@
               {
                 "type": "named",
                 "data": {
-                  "name": "ArmDownCommand"
+                  "name": "AutoArmUpCommand"
                 }
               },
               {
                 "type": "named",
                 "data": {
-                  "name": "CoralStackCommand"
+                  "name": "AutoCoralOutCommand"
                 }
               }
             ]
-          }
-        },
-        {
-          "type": "named",
-          "data": {
-            "name": "ArmUpCommand"
-          }
-        },
-        {
-          "type": "named",
-          "data": {
-            "name": "ArmDownCommand"
           }
         }
       ]

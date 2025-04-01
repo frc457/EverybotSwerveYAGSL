@@ -8,20 +8,20 @@
       },
       "prevControl": null,
       "nextControl": {
-        "x": 7.495815464854984,
-        "y": 3.949918862110141
+        "x": 7.572837569224226,
+        "y": 3.9304039125059456
       },
-      "isLocked": true,
+      "isLocked": false,
       "linkedName": "Middle Start"
     },
     {
       "anchor": {
-        "x": 5.689741325880655,
+        "x": 5.715106696184083,
         "y": 3.9666555851063823
       },
       "prevControl": {
-        "x": 6.113375778393981,
-        "y": 3.9758093096069738
+        "x": 6.033031286271072,
+        "y": 3.9702284880513243
       },
       "nextControl": null,
       "isLocked": false,
@@ -42,7 +42,7 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": 0.0
+    "rotation": 0.31182277232983724
   },
   "reversed": false,
   "folder": "MiddleAuto",

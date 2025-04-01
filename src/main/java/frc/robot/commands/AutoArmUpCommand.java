@@ -6,12 +6,16 @@ package frc.robot.commands;
 
 import frc.robot.Constants.ArmConstants;
 import frc.robot.subsystems.ArmSubsystem;
+
+import java.util.Timer;
+import java.util.TimerTask;
+
 import edu.wpi.first.wpilibj2.command.Command;
 
 /** An ArmUpCommand that uses an Arm subsystem. */
-public class ArmUpCommand extends Command {
+public class AutoArmUpCommand extends Command {
   private final ArmSubsystem m_arm;
-  
+  private boolean finished = false;
 
 
   /**
@@ -22,7 +26,7 @@ public class ArmUpCommand extends Command {
    *
    * @param arm The subsystem used by this command.
    */
-  public ArmUpCommand(ArmSubsystem arm) {
+  public AutoArmUpCommand(ArmSubsystem arm) {
     m_arm = arm;
     // Use addRequirements() here to declare subsystem dependencies.
     addRequirements(arm);
@@ -30,12 +34,24 @@ public class ArmUpCommand extends Command {
 
   // Called when the command is initially scheduled.
   @Override
-  public void initialize() {}
+  public void initialize() {
+    finished = false;
+
+    TimerTask task = new TimerTask() {
+      public void run() {
+        finished = true;
+      }
+    };
+
+    Timer timer = new Timer();
+
+    timer.schedule(task, 250);
+  }
 
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {
-    m_arm.runArm(ArmConstants.ARM_SPEED_UP);
+    m_arm.runArm(ArmConstants.Auto_ARM_SPEED_UP);
   }
 
   // Called once the command ends or is interrupted.
@@ -49,6 +65,6 @@ public class ArmUpCommand extends Command {
   // Returns true when the command should end.
   @Override
   public boolean isFinished() {
-    return false;
+    return finished;
   }
 }

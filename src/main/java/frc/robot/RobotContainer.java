@@ -24,6 +24,10 @@ import frc.robot.commands.ArmDownCommand;
 import frc.robot.commands.ArmUpCommand;
 import frc.robot.commands.AutoAlgaeInCommand;
 import frc.robot.commands.AutoAlgaeOutCommand;
+import frc.robot.commands.AutoArmDownCommand;
+import frc.robot.commands.AutoArmUpCommand;
+import frc.robot.commands.AutoCoralStackCommand;
+import frc.robot.commands.AutoCoralOutCommand;
 import frc.robot.commands.ClimberDownCommand;
 import frc.robot.commands.ClimberUpCommand;
 import frc.robot.commands.CoralOutCommand;
@@ -113,6 +117,10 @@ new CommandPS5Controller(OperatorConstants.OPERATOR_CONTROLLER_PORT);
     NamedCommands.registerCommand("ArmDownCommand", new ArmDownCommand(m_arm));
     NamedCommands.registerCommand("AutoAlgaeInCommand", new AutoAlgaeInCommand(m_roller));
     NamedCommands.registerCommand("AutoAlgaeOutCommand", new AutoAlgaeOutCommand(m_roller));
+    NamedCommands.registerCommand("AutoArmUpCommand", new AutoArmUpCommand(m_arm));
+    NamedCommands.registerCommand("AutoArmDownCommand", new AutoArmDownCommand(m_arm));
+    NamedCommands.registerCommand("AutoCoralOutCommand", new AutoCoralOutCommand(m_roller));
+    NamedCommands.registerCommand("AutoCoralStackCommand", new AutoCoralStackCommand(m_roller));
   }
 
   /**
@@ -209,7 +217,7 @@ new CommandPS5Controller(OperatorConstants.OPERATOR_CONTROLLER_PORT);
   public Command getAutonomousCommand()
   {
     // An example command will be run in autonomous
-    return drivebase.getAutonomousCommand("MiddleAuto");
+    return drivebase.getAutonomousCommand("LeftAuto");
   }
 
   public void setMotorBrake(boolean brake)

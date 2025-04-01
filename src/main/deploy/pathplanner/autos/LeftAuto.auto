@@ -7,7 +7,7 @@
         {
           "type": "named",
           "data": {
-            "name": "ArmDownCommand"
+            "name": "AutoArmUpCommand"
           }
         },
         {
@@ -23,13 +23,13 @@
               {
                 "type": "named",
                 "data": {
-                  "name": "ArmDownCommand"
+                  "name": "AutoArmUpCommand"
                 }
               },
               {
                 "type": "named",
                 "data": {
-                  "name": "CoralOutCommand"
+                  "name": "AutoCoralOutCommand"
                 }
               }
             ]
@@ -38,13 +38,13 @@
         {
           "type": "named",
           "data": {
-            "name": "ArmUpCommand"
+            "name": "AutoArmDownCommand"
           }
         },
         {
           "type": "named",
           "data": {
-            "name": "ArmDownCommand"
+            "name": "AutoArmUpCommand"
           }
         },
         {
@@ -56,7 +56,7 @@
         {
           "type": "named",
           "data": {
-            "name": "ArmDownCommand"
+            "name": "AutoArmUpCommand"
           }
         },
         {
@@ -78,13 +78,13 @@
               {
                 "type": "named",
                 "data": {
-                  "name": "ArmDownCommand"
+                  "name": "AutoArmUpCommand"
                 }
               },
               {
                 "type": "named",
                 "data": {
-                  "name": "CoralOutCommand"
+                  "name": "AutoCoralOutCommand"
                 }
               }
             ]
@@ -93,13 +93,13 @@
         {
           "type": "named",
           "data": {
-            "name": "ArmUpCommand"
+            "name": "AutoArmDownCommand"
           }
         },
         {
           "type": "named",
           "data": {
-            "name": "ArmDownCommand"
+            "name": "AutoArmUpCommand"
           }
         },
         {
@@ -111,7 +111,7 @@
         {
           "type": "named",
           "data": {
-            "name": "ArmDownCommand"
+            "name": "AutoArmUpCommand"
           }
         },
         {
@@ -133,13 +133,13 @@
               {
                 "type": "named",
                 "data": {
-                  "name": "ArmDownCommand"
+                  "name": "AutoArmUpCommand"
                 }
               },
               {
                 "type": "named",
                 "data": {
-                  "name": "CoralStackCommand"
+                  "name": "AutoCoralStackCommand"
                 }
               }
             ]
@@ -148,13 +148,13 @@
         {
           "type": "named",
           "data": {
-            "name": "ArmUpCommand"
+            "name": "AutoArmDownCommand"
           }
         },
         {
           "type": "named",
           "data": {
-            "name": "ArmDownCommand"
+            "name": "AutoArmUpCommand"
           }
         }
       ]
