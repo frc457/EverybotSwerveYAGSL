@@ -3,13 +3,13 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 3.188250000000001,
-        "y": 7.3985
+        "x": 1.1963227815748219,
+        "y": 7.27330857424174
       },
       "prevControl": null,
       "nextControl": {
-        "x": 3.4329905134511547,
-        "y": 7.34748940232005
+        "x": 1.4410632950259756,
+        "y": 7.222297976561789
       },
       "isLocked": false,
       "linkedName": "Blue Coral Close"
@@ -48,7 +48,7 @@
   "folder": "MiddleAuto",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": 37.40535663140855
+    "rotation": -54.246112745563195
   },
   "useDefaultConstraints": true
 }
