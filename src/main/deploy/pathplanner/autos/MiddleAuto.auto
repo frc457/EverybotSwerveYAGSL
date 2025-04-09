@@ -5,6 +5,12 @@
     "data": {
       "commands": [
         {
+          "type": "wait",
+          "data": {
+            "waitTime": 5.0
+          }
+        },
+        {
           "type": "named",
           "data": {
             "name": "AutoArmUpCommand"
@@ -45,6 +51,18 @@
           "type": "named",
           "data": {
             "name": "AutoArmUpCommand"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 1.5
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Middle Reef to Station 2"
           }
         }
       ]

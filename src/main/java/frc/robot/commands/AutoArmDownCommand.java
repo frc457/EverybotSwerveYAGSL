@@ -46,7 +46,7 @@ public class AutoArmDownCommand extends Command {
 
     Timer timer = new Timer();
 
-    timer.schedule(task, 250);
+    timer.schedule(task, 800);
   }
 
   // Called every time the scheduler runs while the command is scheduled.

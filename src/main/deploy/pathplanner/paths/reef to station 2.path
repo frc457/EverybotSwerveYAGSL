@@ -3,25 +3,25 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 5.105051083562665,
-        "y": 2.9706898890960853
+        "x": 5.108296470100612,
+        "y": 2.95792465354461
       },
       "prevControl": null,
       "nextControl": {
-        "x": 4.504452372938883,
-        "y": 2.220095649113897
+        "x": 4.50769775947683,
+        "y": 2.207330413562422
       },
       "isLocked": false,
       "linkedName": "Red Reef 1"
     },
     {
       "anchor": {
-        "x": 1.287,
-        "y": 0.6904999999999996
+        "x": 1.0760016365879985,
+        "y": 0.7283603427813478
       },
       "prevControl": {
-        "x": 3.2565,
-        "y": 1.8409999999999989
+        "x": 3.0455016365879994,
+        "y": 1.8788603427813468
       },
       "nextControl": null,
       "isLocked": false,
@@ -48,7 +48,7 @@
   "folder": "RightAuto",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": -60.10109816138549
+    "rotation": -59.74356283647078
   },
   "useDefaultConstraints": true
 }
