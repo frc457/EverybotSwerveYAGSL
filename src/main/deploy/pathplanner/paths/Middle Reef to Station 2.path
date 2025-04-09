@@ -3,29 +3,29 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 5.667432438376694,
-        "y": 3.9666555851063823
+        "x": 5.713076925087385,
+        "y": 4.021777121047824
       },
       "prevControl": null,
       "nextControl": {
-        "x": 6.27032574219261,
-        "y": 5.1754999999999995
+        "x": 6.315970228903302,
+        "y": 5.2306215359414425
       },
       "isLocked": false,
       "linkedName": "Middle Reef 1"
     },
     {
       "anchor": {
-        "x": 1.1963227815748219,
-        "y": 7.27330857424174
+        "x": 2.83725,
+        "y": 7.3985
       },
       "prevControl": {
-        "x": 3.3608227815748197,
-        "y": 7.19530857424174
+        "x": 5.001749999999998,
+        "y": 7.320500000000001
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": "Blue Coral Close"
+      "linkedName": null
     }
   ],
   "rotationTargets": [],
@@ -42,7 +42,7 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": -54.246112745563195
+    "rotation": 28.523118606312035
   },
   "reversed": false,
   "folder": "MiddleAuto",
