@@ -146,35 +146,22 @@ new CommandPS5Controller(OperatorConstants.OPERATOR_CONTROLLER_PORT);
      * Here we declare all of our operator commands, these commands could have been
      * written more compact but are left verbose so the intent is clear.
      */
-   
+   // PS5 Controller Button Mapping
     m_operatorController.R2().whileTrue(new AlgaeInCommand(m_roller));
-    
-    // Here we use a trigger as a button when it is pushed past a certain threshold
     m_operatorController.R1().whileTrue(new AlgaeOutCommand(m_roller));
-
-    /**
-     * The arm will be passively held up or down after this is used,
-     * make sure not to run the arm too long or it may get upset!
-     */
     m_operatorController.L2().whileTrue(new ArmUpCommand(m_arm));
     m_operatorController.L1().whileTrue(new ArmDownCommand(m_arm));
-
-    /**
-     * Used to score coral, the stack command is for when there is already coral
-     * in L1 where you are trying to score. The numbers may need to be tuned, 
-     * make sure the rollers do not wear on the plastic basket.
-     */
     m_operatorController.square().whileTrue(new CoralOutCommand(m_roller));
     m_operatorController.triangle().whileTrue(new CoralStackCommand(m_roller));
     m_operatorController.cross().whileTrue(new ClimberUpCommand(m_climber));
     m_operatorController.circle().whileTrue(new ClimberDownCommand(m_climber));
+   //m_operatorController.pov(90).whileTrue(new ClimberUpCommand(m_climber));
+   //m_operatorController.pov(270).whileTrue(new ClimberDownCommand(m_climber)); 
+    
+    // DIY Button Board Mapping
 
-    /**
-     * POV is a direction on the D-Pad or directional arrow pad of the controller,
-     * the direction of this will be different depending on how your winch is wound
-     */
-    //m_operatorController.pov(90).whileTrue(new ClimberUpCommand(m_climber));
-    //m_operatorController.pov(270).whileTrue(new ClimberDownCommand(m_climber));
+ 
+  
 
     if (RobotBase.isSimulation())
     {
