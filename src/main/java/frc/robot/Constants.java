@@ -43,9 +43,9 @@ public final class Constants
   {
     public static final int OPERATOR_CONTROLLER_PORT = 1;
     // Joystick Deadband
-    public static final double DEADBAND        = 0.1;
-    public static final double LEFT_Y_DEADBAND = 0.1;
-    public static final double RIGHT_X_DEADBAND = 0.1;
+    public static final double DEADBAND        = 0.3;
+    public static final double LEFT_Y_DEADBAND = 0.3;
+    public static final double RIGHT_X_DEADBAND = 0.3;
     public static final double TURN_CONSTANT    = 6;
   }
   public static final class RollerConstants {
@@ -53,9 +53,10 @@ public final class Constants
     public static final int ROLLER_MOTOR_CURRENT_LIMIT = 60;
     public static final double ROLLER_MOTOR_VOLTAGE_COMP = 10;
     public static final double ROLLER_CORAL_OUT = .40;
+    public static final double ROLLER_CORAL_STACK = .75;
     public static final double ROLLER_ALGAE_IN = -.60;
     public static final double ROLLER_ALGAE_OUT = 0.55;
-    public static final double ROLLER_CORAL_STACK = .75;
+    
 
     //Auto Roller Constants
     public static final double Auto_ROLLER_ALGAE_IN = -.80;

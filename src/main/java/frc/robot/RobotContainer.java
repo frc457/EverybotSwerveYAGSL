@@ -160,6 +160,14 @@ new CommandPS5Controller(OperatorConstants.OPERATOR_CONTROLLER_PORT);
     
     // DIY Button Board Mapping
 
+    //m_operatorController.button(1).whileTrue(new ClimberUpCommand(m_climber));
+    //m_operatorController.button(2).whileTrue(new ClimberDownCommand(m_climber));
+    //m_operatorController.button(3).whileTrue(new ArmUpCommand(m_arm));
+    //m_operatorController.button(4).whileTrue(new ArmDownCommand(m_arm));
+    //m_operatorController.button(5).whileTrue(new CoralOutCommand(m_roller));
+    //m_operatorController.button(6).whileTrue(new CoralStackCommand(m_roller));
+    //m_operatorController.button(7).whileTrue(new AlgaeInCommand(m_roller));
+    //m_operatorController.button(8).whileTrue(new AlgaeOutCommand(m_roller));
  
   
 

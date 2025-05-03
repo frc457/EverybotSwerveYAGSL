@@ -3,29 +3,29 @@
   "waypoints": [
     {
       "anchor": {
-        "x": 1.1963227815748219,
-        "y": 7.27330857424174
+        "x": 1.907898625725479,
+        "y": 6.472452674726608
       },
       "prevControl": null,
       "nextControl": {
-        "x": 1.791999002925304,
-        "y": 5.221890150573183
+        "x": 1.8757688612115455,
+        "y": 4.479489722792196
       },
       "isLocked": false,
-      "linkedName": "Blue Coral Close"
+      "linkedName": "Algae 1"
     },
     {
       "anchor": {
-        "x": 3.242269522641408,
-        "y": 4.026659618986028
+        "x": 1.7882833309092703,
+        "y": 1.963753545031035
       },
       "prevControl": {
-        "x": 2.198393494282533,
-        "y": 4.209436014071272
+        "x": 1.7958096889401396,
+        "y": 2.825739730297765
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": "Middle Reef Back"
+      "linkedName": "Algae 3"
     }
   ],
   "rotationTargets": [],
@@ -42,13 +42,13 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": 179.99999999999977
+    "rotation": 0.42168143403293623
   },
   "reversed": false,
   "folder": "LeftAuto",
   "idealStartingState": {
     "velocity": 0,
-    "rotation": -54.246112745563195
+    "rotation": 0.0
   },
   "useDefaultConstraints": true
 }

@@ -16,16 +16,16 @@
     },
     {
       "anchor": {
-        "x": 1.1963227815748219,
-        "y": 7.27330857424174
+        "x": 1.907898625725479,
+        "y": 6.472452674726608
       },
       "prevControl": {
-        "x": 2.7542648991337595,
-        "y": 5.0728204487915605
+        "x": 3.363749999995793,
+        "y": 6.179750000004201
       },
       "nextControl": null,
       "isLocked": false,
-      "linkedName": "Blue Coral Close"
+      "linkedName": "Algae 1"
     }
   ],
   "rotationTargets": [],
@@ -42,7 +42,7 @@
   },
   "goalEndState": {
     "velocity": 0,
-    "rotation": -54.246112745563195
+    "rotation": 0.0
   },
   "reversed": false,
   "folder": "LeftAuto",

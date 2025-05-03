@@ -111,38 +111,13 @@
         {
           "type": "named",
           "data": {
-            "name": "AutoArmUpCommand"
-          }
-        },
-        {
-          "type": "wait",
-          "data": {
-            "waitTime": 0.3
+            "name": "AutoArmDownCommand"
           }
         },
         {
           "type": "path",
           "data": {
-            "pathName": "Blue Coral Close to Blue Reef 2 (5)"
-          }
-        },
-        {
-          "type": "parallel",
-          "data": {
-            "commands": [
-              {
-                "type": "named",
-                "data": {
-                  "name": "AutoArmUpCommand"
-                }
-              },
-              {
-                "type": "named",
-                "data": {
-                  "name": "AutoCoralStackCommand"
-                }
-              }
-            ]
+            "pathName": "Algae 1 to Algae 3 (5)"
           }
         }
       ]
